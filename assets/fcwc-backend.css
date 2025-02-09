@@ -1,0 +1,52 @@
+.fcwc-pro-btn {
+    position: relative;
+    padding: 14px 30px;
+    line-height: 1;
+    font-size: 18px !important;
+    color: white;
+    background: linear-gradient(45deg, #2563eb, #4f46e5) !important;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none; /* Ensure it's styled as a button */
+    display: inline-block;
+    text-align: center; /* Center text */
+}
+
+.fcwc-pro-btn .shine-content {
+    position: relative;
+    z-index: 1;
+}
+
+.fcwc-pro-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transform: rotate(45deg) translateY(-100%);
+    transition: transform 0.5s ease;
+}
+
+.fcwc-pro-btn:hover::before {
+    transform: rotate(45deg) translateY(100%);
+}
+
+.fcwc-pro-btn:hover .shine-content,
+.fcwc-pro-btn:active .shine-content,
+.fcwc-pro-btn:focus .shine-content {
+    color: white;
+    box-shadow: none;
+}
+
+tr.wc-settings-row-buy-pro-button-row td ,
+tr.wc-settings-row-buy-pro-button-row th{
+    padding: 5px 24px 5px 0;
+}
