@@ -91,3 +91,13 @@ if ( ! defined( 'ABSPATH' ) ) exit; ?>
 .fcwc-cart .fcwc-apply-discount:hover label {
     color: <?php echo esc_html( $style['fcwc_coupon_apply_button_text_color']['hover_color'] ); ?>;
 }
+
+#fcwc_place_order{
+    background-color: <?php echo esc_html( $style['fcwc_place_order_button_background_color']['color'] ); ?>;
+    color: <?php echo esc_html( $style['fcwc_place_order_button_text_color']['color'] ); ?>; 
+}
+
+#fcwc_place_order:hover{
+    background-color: <?php echo esc_html( $style['fcwc_place_order_button_background_color']['hover_color'] ); ?>;
+    color: <?php echo esc_html( $style['fcwc_place_order_button_text_color']['hover_color'] ); ?>;
+}

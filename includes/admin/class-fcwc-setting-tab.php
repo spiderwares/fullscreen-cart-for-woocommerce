@@ -360,6 +360,15 @@ if ( ! class_exists( 'FCWC_Settings_Fullscreen_Cart' ) ) :
                     'description' => esc_html__( 'Upgrade to the Pro version to customize the "Change Address" button text.', 'fullscreen-cart-for-woocommerce' ),
                     'row_class'   => 'buy-pro-button-row',
                 ),
+                'enable_one_page_checkout' => array(
+                    'type'        => 'buy_pro_button',
+                    'id'          => 'fcwc_enable_one_page_checkout',
+                    'title'       => esc_html__( 'Enable One Page Checkout', 'fullscreen-cart-for-woocommerce' ),
+                    'button_text' => esc_html__( 'Buy Pro', 'fullscreen-cart-for-woocommerce' ),
+                    'pro_link'    => FCWC_PRO_VERSION,
+                    'description' => esc_html__( 'Upgrade to the Pro version to Enable one page checkout.', 'fullscreen-cart-for-woocommerce' ),
+                    'row_class'   => 'buy-pro-button-row',
+                ),
                 'section_end' => array(
                     'type' => 'sectionend',
                     'id' => 'fcwc_checkout_settings'
@@ -517,6 +526,36 @@ if ( ! class_exists( 'FCWC_Settings_Fullscreen_Cart' ) ) :
                 'update_address_style_end' => array(
                     'type' => 'sectionend',
                     'id'   => 'fcwc_update_address_style_title',
+                ),
+
+                
+                'place_order_style_title'=> array(
+                    'title' => __( 'Place Order Button Style', 'fullscreen-cart-for-woocommerce' ),
+                    'type'  => 'title',
+                    'desc'  => '',
+                    'id'    => 'fcwc_place_order_style_title',
+                ),
+                'place_order_button_text_color' => array(
+                    'type'        => 'buy_pro_button',
+                    'id'          => 'fcwc_place_order_button_text_color',
+                    'title'       => esc_html__( 'Text Color', 'fullscreen-cart-for-woocommerce' ),
+                    'button_text' => esc_html__( 'Buy Pro', 'fullscreen-cart-for-woocommerce' ),
+                    'pro_link'    => FCWC_PRO_VERSION, // Add the Pro version link here
+                    'description' => esc_html__( 'Upgrade to the Pro version to unlock customizable text color for the Update Address button.', 'fullscreen-cart-for-woocommerce' ),
+                    'row_class'   => 'buy-pro-button-row',
+                ),
+                'place_order_button_background_color' => array(
+                    'type'        => 'buy_pro_button',
+                    'id'          => 'fcwc_place_order_button_background_color',
+                    'title'       => esc_html__( 'Background Color', 'fullscreen-cart-for-woocommerce' ),
+                    'button_text' => esc_html__( 'Buy Pro', 'fullscreen-cart-for-woocommerce' ),
+                    'pro_link'    => FCWC_PRO_VERSION, // Add the Pro version link here
+                    'description' => esc_html__( 'Upgrade to the Pro version to unlock customizable background color for the Update Address button.', 'fullscreen-cart-for-woocommerce' ),
+                    'row_class'   => 'buy-pro-button-row',
+                ),
+                'place_order_style_end' => array(
+                    'type' => 'sectionend',
+                    'id'   => 'fcwc_place_order_style_title',
                 ),
                 
             );

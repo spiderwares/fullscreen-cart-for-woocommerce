@@ -3,7 +3,7 @@
  * Plugin Name: Fullscreen Cart for WooCommerce
  * Plugin URI: https://www.jthemes.com/
  * Description: A plugin that enhances the WooCommerce shopping experience by displaying a fullscreen cart overlay along with interface quick add to cart.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Jthemes Studio
  * Author URI: https://www.jthemes.com/
  * License: GPL-2.0+
@@ -24,7 +24,7 @@ if ( ! defined( 'FCWC_BASENAME' ) ) :
 endif;
 
 if ( ! defined( 'FCWC_VERSION' ) ) :
-	define( 'FCWC_VERSION', '1.1.0' ); // Define the plugin version.
+	define( 'FCWC_VERSION', '1.1.1' ); // Define the plugin version.
 endif;
 
 if ( ! defined( 'FCWC_PATH' ) ) :

@@ -44,4 +44,5 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
         </div>
         <?php do_action( 'fcwc_after_popup_html', $cart, $settings ); ?>
     </div>
+    <?php do_action( 'fcwc_checkout_html' ) ?>
 </div>

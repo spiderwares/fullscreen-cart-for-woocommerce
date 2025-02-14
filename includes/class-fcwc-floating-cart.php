@@ -21,6 +21,7 @@ if ( ! class_exists( 'FCWC_Floating_Cart' ) ) :
          */
         public function fcwc_floating_cart( $attr ){
             if ( function_exists( 'WC') && is_object( WC()->cart ) ) :
+                wp_enqueue_script('wc-checkout');
                 $cart               = WC()->cart;
                 $general_setting    = get_option( 'fcwc_general' );
                 $product_setting    = get_option( 'fcwc_product' );

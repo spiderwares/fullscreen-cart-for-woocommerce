@@ -165,7 +165,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
                         <?php endif; ?>
 
                         <?php if( isset( $settings['fcwc_show_go_to_checkout_button'] ) && 'yes' === $settings['fcwc_show_go_to_checkout_button'] ) : ?>
-                            <a class="fcwc-button fcwc-button-checkout-now" href="<?php echo esc_url( wc_get_checkout_url() ); ?>" >
+                            <a class="fcwc-button fcwc-button-checkout-now <?php echo esc_attr(apply_filters( 'fcwc_checkout_button_classes', '', $settings )); ?>" href="<?php echo esc_url( wc_get_checkout_url() ); ?>" >
                                 <?php echo esc_html( $settings['fcwc_go_to_checkout_button_text'] ); ?>
                             </a>
                         <?php endif; ?>

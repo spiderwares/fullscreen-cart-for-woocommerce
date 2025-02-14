@@ -76,6 +76,7 @@ if ( ! class_exists( 'FCWC_Cart_Controller' ) ) :
             ); 
             $fragments['.fcwc-shopping-cart'] = ob_get_clean();
             $fragments['.fcwc-cart-count']    = apply_filters( 'fcwc_cart_content_count', '<span class="fcwc-cart-count">' . esc_html( $cart->get_cart_contents_count() ) . '</span>' );
+            
             return $fragments;
         }
         

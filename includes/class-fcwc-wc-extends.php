@@ -21,6 +21,10 @@ class FCWC_WC_Extends {
      */
     public function fullscreen_cart( $attr ){
         if ( function_exists( 'WC') && is_object( WC()->cart ) ) :
+            wp_enqueue_script('wc-checkout');
+            wp_enqueue_script( 'wc-checkout' );
+            wp_enqueue_script( 'wc-country-select' );
+            wp_enqueue_script( 'wc-address-i18n' );
             $cart               = WC()->cart;
             $general_setting    = get_option( 'fcwc_general' );
             $product_setting    = get_option( 'fcwc_product' );
