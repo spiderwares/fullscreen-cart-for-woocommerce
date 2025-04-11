@@ -102,7 +102,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
                             /* translators: %s location. */
                             $estimated_text = sprintf( 
                                 ' <small>' . esc_html__( '(estimated for %s)', 'fullscreen-cart-for-woocommerce' ) . '</small>', 
-                                esc_html( $cart->estimated_for_prefix( $taxable_address[0] ) . $cart->countries[ $taxable_address[0] ] )
+                                esc_html( WC()->countries->estimated_for_prefix( $taxable_address[0] ) . WC()->countries->countries[ $taxable_address[0] ] )
                             );
                         endif;
 
