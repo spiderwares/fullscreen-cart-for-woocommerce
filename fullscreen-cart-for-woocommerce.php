@@ -24,7 +24,7 @@ if ( ! defined( 'FCWC_BASENAME' ) ) :
 endif;
 
 if ( ! defined( 'FCWC_VERSION' ) ) :
-	define( 'FCWC_VERSION', '1.1.5' ); // Define the plugin version.
+	define( 'FCWC_VERSION', '1.1.6' ); // Define the plugin version.
 endif;
 
 if ( ! defined( 'FCWC_PATH' ) ) :
